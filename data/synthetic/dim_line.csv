@@ -1,0 +1,13 @@
+line_id,plant_id,line_name,daily_shift_target_units,source
+PLT-A-L1,PLT-A,Line 1,480,Simulated Dataset
+PLT-A-L2,PLT-A,Line 2,520,Simulated Dataset
+PLT-A-L3,PLT-A,Line 3,440,Simulated Dataset
+PLT-B-L1,PLT-B,Line 1,480,Simulated Dataset
+PLT-B-L2,PLT-B,Line 2,520,Simulated Dataset
+PLT-B-L3,PLT-B,Line 3,440,Simulated Dataset
+PLT-C-L1,PLT-C,Line 1,480,Simulated Dataset
+PLT-C-L2,PLT-C,Line 2,520,Simulated Dataset
+PLT-C-L3,PLT-C,Line 3,440,Simulated Dataset
+PLT-D-L1,PLT-D,Line 1,480,Simulated Dataset
+PLT-D-L2,PLT-D,Line 2,520,Simulated Dataset
+PLT-D-L3,PLT-D,Line 3,440,Simulated Dataset

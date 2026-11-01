@@ -1,0 +1,5 @@
+plant_id,plant_name,region,source
+PLT-A,Plant A,North,Simulated Dataset
+PLT-B,Plant B,North,Simulated Dataset
+PLT-C,Plant C,South,Simulated Dataset
+PLT-D,Plant D,East,Simulated Dataset

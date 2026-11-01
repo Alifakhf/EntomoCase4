@@ -1,0 +1,57 @@
+{
+  "n_train": 7500,
+  "n_test": 2500,
+  "test_failures": 85,
+  "base_rate_test": 0.034,
+  "pr_auc": 0.591,
+  "at_0.5": {
+    "threshold": 0.5,
+    "precision": 0.376,
+    "recall": 0.835,
+    "f1": 0.518,
+    "tn": 2297,
+    "fp": 118,
+    "fn": 14,
+    "tp": 71
+  },
+  "at_best_f1": {
+    "threshold": 0.644,
+    "precision": 0.557,
+    "recall": 0.753,
+    "f1": 0.64,
+    "tn": 2364,
+    "fp": 51,
+    "fn": 21,
+    "tp": 64
+  },
+  "feature_importance": {
+    "rot_speed_rpm": 0.35,
+    "torque_nm": 0.303,
+    "tool_wear_min": 0.196,
+    "air_temp_k": 0.081,
+    "process_temp_k": 0.052,
+    "machine_type_L": 0.009,
+    "machine_type_M": 0.005,
+    "machine_type_H": 0.003
+  },
+  "features_used": [
+    "machine_type",
+    "air_temp_k",
+    "process_temp_k",
+    "rot_speed_rpm",
+    "torque_nm",
+    "tool_wear_min"
+  ],
+  "excluded_leaky_features": [
+    "TWF",
+    "HDF",
+    "PWF",
+    "OSF",
+    "RNF"
+  ],
+  "limitations": [
+    "Dataset is synthetic (AI4I 2020), not client machine data.",
+    "Threshold tuned on the test split: optimistic; treat as demonstration.",
+    "Predictions are decision support only and require human review; they do not recommend replacement or maintenance."
+  ]
+}

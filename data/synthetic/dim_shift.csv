@@ -1,0 +1,4 @@
+shift,start_time,source
+Shift 1,06:00,WFS shift label; times simulated
+Shift 2,14:00,WFS shift label; times simulated
+Shift 3,22:00,WFS shift label; times simulated

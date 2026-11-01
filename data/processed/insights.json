@@ -1,0 +1,241 @@
+{
+  "config": {
+    "gap_vs_peer_median_pct": 5.0,
+    "recent_months": 3,
+    "trend_increase_pct": 25.0,
+    "absenteeism_rate_pct": 5.0,
+    "overtime_hours_per_100_workers_day": 15.0,
+    "behavior_lapse_rate_increase_pct": 25.0,
+    "min_people_per_cell": 5
+  },
+  "insights": [
+    {
+      "id": "INS-001",
+      "label": "Rule-based alert",
+      "plant_id": "PLT-C",
+      "plant": "Plant C",
+      "department": "Maintenance",
+      "indicators": [
+        "downtime_pct"
+      ],
+      "observation": "Plant C Downtime (% of planned run time) is 19.98 vs peer median 7.20 (177.6% worse) over the last 3 months (2022-04 to 2022-06).",
+      "why_it_matters": "A sustained gap versus comparable plants running standardized processes warrants investigation; the gap does not itself identify a cause.",
+      "review_by": [
+        "Maintenance",
+        "COO / Operations"
+      ],
+      "method": "Compare plant KPI with median of other plants; alert if >= 5.0% worse.",
+      "severity": "High",
+      "validation_status": "Not yet validated by humans"
+    },
+    {
+      "id": "INS-002",
+      "label": "Rule-based alert",
+      "plant_id": "PLT-C",
+      "plant": "Plant C",
+      "department": "Maintenance",
+      "indicators": [
+        "downtime_pct"
+      ],
+      "observation": "Plant C Downtime (% of planned run time) rose from 12.12 (baseline 2021-07 to 2022-03) to 19.98 (last 3 months), +65%.",
+      "why_it_matters": "A marked deterioration against the plant's own history; check whether it is persistent, seasonal, or linked to a known event.",
+      "review_by": [
+        "Maintenance",
+        "Plant Manager"
+      ],
+      "method": "Recent 3-month rate vs prior baseline; alert if increase >= 25.0%.",
+      "severity": "High",
+      "validation_status": "Not yet validated by humans"
+    },
+    {
+      "id": "INS-003",
+      "label": "Rule-based alert",
+      "plant_id": "PLT-C",
+      "plant": "Plant C",
+      "department": "HR & Workforce",
+      "indicators": [
+        "absent_shifts"
+      ],
+      "observation": "Plant C absenteeism is 8.1% in the last 3 months (threshold 5.0%).",
+      "why_it_matters": "Sustained absenteeism raises scheduling risk and may increase overtime.",
+      "review_by": [
+        "HR & Workforce",
+        "Production"
+      ],
+      "method": "Absent / scheduled shifts >= 5.0%.",
+      "severity": "High",
+      "validation_status": "Not yet validated by humans"
+    },
+    {
+      "id": "INS-004",
+      "label": "Rule-based alert",
+      "plant_id": "PLT-B",
+      "plant": "Plant B",
+      "department": "HR & Workforce",
+      "indicators": [
+        "overtime_hours"
+      ],
+      "observation": "Plant B overtime is 17.8 h per 100 workers per day in the last 3 months (threshold 15.0).",
+      "why_it_matters": "High overtime can signal capacity or absence pressure; review before it affects retention.",
+      "review_by": [
+        "HR & Workforce",
+        "Production"
+      ],
+      "method": "Overtime hours per 100 scheduled workers per workday above threshold.",
+      "severity": "Medium",
+      "validation_status": "Not yet validated by humans"
+    },
+    {
+      "id": "INS-005",
+      "label": "Rule-based alert",
+      "plant_id": "PLT-C",
+      "plant": "Plant C",
+      "department": "Production",
+      "indicators": [
+        "labor_productivity"
+      ],
+      "observation": "Plant C Labor productivity (good units/direct labor hour) is 3.74 vs peer median 4.37 (14.4% worse) over the last 3 months (2022-04 to 2022-06).",
+      "why_it_matters": "A sustained gap versus comparable plants running standardized processes warrants investigation; the gap does not itself identify a cause.",
+      "review_by": [
+        "Production",
+        "COO / Operations"
+      ],
+      "method": "Compare plant KPI with median of other plants; alert if >= 5.0% worse.",
+      "severity": "Medium",
+      "validation_status": "Not yet validated by humans"
+    },
+    {
+      "id": "INS-006",
+      "label": "Rule-based alert",
+      "plant_id": "PLT-C",
+      "plant": "Plant C",
+      "department": "Production",
+      "indicators": [
+        "production_achievement"
+      ],
+      "observation": "Plant C Production achievement (%) is 79.17 vs peer median 91.65 (13.6% worse) over the last 3 months (2022-04 to 2022-06).",
+      "why_it_matters": "A sustained gap versus comparable plants running standardized processes warrants investigation; the gap does not itself identify a cause.",
+      "review_by": [
+        "Production",
+        "COO / Operations"
+      ],
+      "method": "Compare plant KPI with median of other plants; alert if >= 5.0% worse.",
+      "severity": "Medium",
+      "validation_status": "Not yet validated by humans"
+    },
+    {
+      "id": "INS-007",
+      "label": "Rule-based alert",
+      "plant_id": "PLT-C",
+      "plant": "Plant C",
+      "department": "HR & Workforce",
+      "indicators": [
+        "absenteeism_rate"
+      ],
+      "observation": "Plant C Absenteeism rate (%) rose from 6.11 (baseline 2021-07 to 2022-03) to 8.10 (last 3 months), +33%.",
+      "why_it_matters": "A marked deterioration against the plant's own history; check whether it is persistent, seasonal, or linked to a known event.",
+      "review_by": [
+        "HR & Workforce",
+        "Plant Manager"
+      ],
+      "method": "Recent 3-month rate vs prior baseline; alert if increase >= 25.0%.",
+      "severity": "Medium",
+      "validation_status": "Not yet validated by humans"
+    },
+    {
+      "id": "INS-008",
+      "label": "Rule-based alert",
+      "plant_id": "PLT-C",
+      "plant": "Plant C",
+      "department": "HR & Workforce",
+      "indicators": [
+        "overtime_hours"
+      ],
+      "observation": "Plant C overtime is 47.4 h per 100 workers per day in the last 3 months (threshold 15.0).",
+      "why_it_matters": "High overtime can signal capacity or absence pressure; review before it affects retention.",
+      "review_by": [
+        "HR & Workforce",
+        "Production"
+      ],
+      "method": "Overtime hours per 100 scheduled workers per workday above threshold.",
+      "severity": "Medium",
+      "validation_status": "Not yet validated by humans"
+    },
+    {
+      "id": "INS-009",
+      "label": "Rule-based alert",
+      "plant_id": "PLT-D",
+      "plant": "Plant D",
+      "department": "Maintenance",
+      "indicators": [
+        "downtime_pct"
+      ],
+      "observation": "Plant D Downtime (% of planned run time) is 7.96 vs peer median 7.20 (10.6% worse) over the last 3 months (2022-04 to 2022-06).",
+      "why_it_matters": "A sustained gap versus comparable plants running standardized processes warrants investigation; the gap does not itself identify a cause.",
+      "review_by": [
+        "Maintenance",
+        "COO / Operations"
+      ],
+      "method": "Compare plant KPI with median of other plants; alert if >= 5.0% worse.",
+      "severity": "Medium",
+      "validation_status": "Not yet validated by humans"
+    },
+    {
+      "id": "INS-010",
+      "label": "Rule-based alert",
+      "plant_id": "PLT-D",
+      "plant": "Plant D",
+      "department": "HR & Workforce",
+      "indicators": [
+        "overtime_hours"
+      ],
+      "observation": "Plant D overtime is 20.8 h per 100 workers per day in the last 3 months (threshold 15.0).",
+      "why_it_matters": "High overtime can signal capacity or absence pressure; review before it affects retention.",
+      "review_by": [
+        "HR & Workforce",
+        "Production"
+      ],
+      "method": "Overtime hours per 100 scheduled workers per workday above threshold.",
+      "severity": "Medium",
+      "validation_status": "Not yet validated by humans"
+    },
+    {
+      "id": "INS-011",
+      "label": "Rule-based alert",
+      "plant_id": "PLT-D",
+      "plant": "Plant D",
+      "department": "Quality",
+      "indicators": [
+        "defect_units"
+      ],
+      "observation": "Plant D defect rate was 4.89% in 2022-04 vs 3.48% in its other months (+41%).",
+      "why_it_matters": "A temporary spike can reveal a process, material, or inspection change; confirm whether it has been resolved.",
+      "review_by": [
+        "Quality",
+        "Production"
+      ],
+      "method": "Month defect rate vs plant's other months; alert if increase >= 40% (checked over last 6 months).",
+      "severity": "Medium",
+      "validation_status": "Not yet validated by humans"
+    },
+    {
+      "id": "INS-012",
+      "label": "Model-generated prediction",
+      "plant_id": null,
+      "plant": "All plants",
+      "department": "Maintenance",
+      "indicators": [
+        "machine_failure"
+      ],
+      "observation": "Failure model (Random Forest, AI4I data) reaches PR-AUC 0.591 vs base rate 0.034; at its tuned threshold precision is 0.56 and recall 0.75.",
+      "why_it_matters": "Useful to prioritize inspection, but roughly 4 in 9 flags are false alarms; predictions require human review.",
+      "review_by": [
+        "Maintenance"
+      ],
+      "method": "Random Forest on type, temperatures, speed, torque, tool wear; failure-mode flags excluded to avoid leakage.",
+      "severity": "Low",
+      "validation_status": "Not yet validated by humans",
+      "source": "Uploaded Dataset: AI4I 2020"
+    }
+  ]
+}

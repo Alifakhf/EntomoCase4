@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Workforce & Operational Intelligence Platform</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2300357A'/><path d='M7 22l6-7 5 4 7-9' stroke='%231CABB0' stroke-width='3' fill='none' stroke-linecap='round'/></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="exec">
+<aside class="side" id="side">
+  <button id="sideClose" aria-label="Close menu">&#10005;</button>
+  <div class="brand"><svg width="30" height="30" viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="#1CABB0"/><path d="M7 22l6-7 5 4 7-9" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/></svg><div><b>WOIP</b><small>Workforce &amp; Operational Intelligence</small></div></div>
+  <nav id="nav"></nav>
+  <div class="side-foot">One Connected View,<br>Function-Specific Actions.</div>
+</aside>
+<div id="backdrop"></div>
+<div class="main">
+  <div class="topwrap">
+  <header class="top">
+    <button id="menu" aria-label="Show or hide menu" aria-expanded="true">&#9776;</button>
+    <div class="ttl"><h1 id="pgTitle"></h1></div>
+    <div class="srch"><input id="search" type="search" placeholder="Search tables, issues, actions…" aria-label="Search"></div>
+  </header>
+  <div class="filters" id="filters">
+    <div class="f"><span>Plant</span><div class="ms" id="fPlant"></div></div>
+    <div class="f f-shift"><span>Shift</span><div class="ms" id="fShift"></div></div>
+    <div class="f f-date"><input type="date" id="fFrom" aria-label="From date"><span>to</span><input type="date" id="fTo" aria-label="To date"></div>
+    <button id="reset" class="btn ghost">&#8634; Reset</button>
+  </div>
+  </div>
+  <main id="view"></main>
+</div>
+<div id="modal" class="modal" hidden><div class="mbox" id="mbox"></div></div>
+<div id="toast" class="toast" hidden></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="data/data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
